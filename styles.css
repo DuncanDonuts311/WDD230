@@ -23,8 +23,8 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
+    width: auto;
+    background-color: #284B63;
   }
   
   li a {
@@ -35,7 +35,7 @@ ul {
   }
   
   li a:hover {
-    background-color: #555;
+    background-color: #353535;
     color: white;
   }
 footer {
