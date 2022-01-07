@@ -18,13 +18,16 @@ h2 {
     padding:25px,50px,25px,50px;
 }
 li{
+    color:#D9D9D9;
     padding:100px,100px,100px,100px;
 
 }
 footer {
     background-color: #353535;
-    height:40px;
-width:100%;
-text-align:center;
+    color:#FFFFFF;
+    height:60px;
+    width:100%;
+    padding:25px,50px,25px,50px;
+    text-align:center;
 
 }
