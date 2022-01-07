@@ -1,18 +1,28 @@
 
 header {
-    background-color: #FFFFFF;
+    background-color: #353535;
+    color: #FFFFFF;
     height:100px;
-    max-width:500px;
+    width:auto;
     text-align:center;
     vertical-align:middle;
 
 }
 section{
-    background-color: #8EE4AF;
+    background-color: #3C6E71;
+    color: #FFFFFF;
+
+}
+h2 {
+    text-align:center;
+    padding:25px,50px,25px,50px;
+}
+li{
+    padding:100px,100px,100px,100px;
 
 }
 footer {
-    background-color: #EDF5E1;
+    background-color: #353535;
     height:40px;
 width:100%;
 text-align:center;
