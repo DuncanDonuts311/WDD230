@@ -1,7 +1,5 @@
-*{
-  font-family:'Roboto';
-}
 body{
+    font-family: 'Roboto Slab', serif;
     background-color:#3C6E71;
     background-size: 100px 100%;
     max-width: 50%;
