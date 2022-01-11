@@ -30,7 +30,7 @@ h2{
 }
 img {
   height: 200px;
-  display: block;
+  display: grid;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 10px;
