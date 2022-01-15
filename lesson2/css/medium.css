@@ -4,35 +4,40 @@
       font-size: 3.5em;
       margin-top: 17px;
     }
-  
+
     main {
       grid-template-columns: 1fr 1fr;
       max-width: 900px;
   }
-  
+
     h2 {
       font-size: 1.8em;
     }
-  
+
     header{
       height: 90px;
       flex-wrap: wrap;
       border-radius: 15px;
     }
-  
+
     footer {
       border-radius: 15px;
       height: 55px;
     }
-  
+
     section:nth-child(1) {
       grid-column: span 1;
       margin-top: 20px;
   }
-  
+
     section:nth-child(2) {
       grid-column: span 1;
       margin-top: 20px;
   }
-    
+  section:nth-child(3) {
+    justify-self:stretch;
+    grid-column: span 2;
+    margin-top: 20px;
+  }
+
   }
