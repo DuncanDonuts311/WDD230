@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Open+Sans&display=swap');
+
+
+:root {
+    --main-color: #2A4D14;
+    --secondary-color: #1F487E;
+    --accent-color: #99C24D;
+    --default-light: #FAFAFF;
+    --default-dark: #637081;
+
+    --header-font: 'Baloo 2', cursive;
+    --paragraph-font: 'Open Sans', sans-serif;
+}
+body{
+    max-width: 100%;
+}
+html { background-color: var(--secondary-color); }
+header {
+    background-color: var(--main-color);
+    display:grid;
+    grid-gap:1%;
+    grid-template-columns: 1fr, 3fr, 1fr, 1fr;
+    box-shadow: var(--default-dark);
+}
+.logo {
+    display:flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+.logo img {
+    grid-column: 1;
+    width: 80px;
+}
+.headings {
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.headings h1 {
+    font-family: var(--header-font);
+    font-size: 1.6rem;
+    margin-bottom: 1%;
+    text-shadow: var(--default-dark);
+}
+.headings h2 {
+    font-family: var(--paragraph-font);
+    margin-top: 0%;
+    color: var(--default-light);
+}
+.social {
+    grid-column: 3/4;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+}
+.social img {
+    max-width: 32px;;
+}
+#headerDate {
+    grid-column: 1/5;
+    background-color:var(--secondary-color);
+    font-family:var(--header-font);
+    font-size: 2em;
+    letter-spacing: 0.2rem;
+    padding: 2%;
+    color:var(--accent-color);
+    text-align: center;
+    margin:2%;
+}
+nav button {
+    position:absolute;
+    right:1%;
+    top:2%;
+    margin: 0.2rem 2vw;
+    background:var(--secondary-color);
+    border: none;
+    font-size: 2rem;
+    color:var(--accent-color);
+}
+nav {
+    grid-column:1/5;
+    font-family:var(--header-font);
+    font-size: 1.2rem;
+    width:100%;
+    margin: 0 auto;
+    box-shadow:var(--default-dark);
+}
+nav ul {
+    display:none;
+    padding: 0;
+    margin: 0;
+    overflow:hidden;
+}
+nav ul.open {
+    display: block;
+}
+#hamburgerBtn span:nth-child(1) {
+    display:block;
+}
+#hamburgerBtn span:nth-child(2) {
+    display:none;
+}
+#hamburgerBtn.open span:nth-child(1) {
+    display:none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+    display:block;
+}
+nav ul li {
+    padding: 1%;
+    list-style: none;
+    background-color:var(--default-dark);
+    border-top: 1px solid rgb(0, 0, 0, 0.5);
+}
+nav ul li a {
+    display:block;
+    text-decoration:none;
+    color:var(--accent-color);
+    padding: 0.8rem 2vw;
+}
+.active {
+    background-color:var(--accent-color);
+    opacity:90%;
+}
+.active a, nav ul li a:hover {
+    color:var(--default-light);
+    opacity: 80%;
+}
+main {
+    width:80%;
+    margin: 0 auto;
+    box-shadow:var(--default-dark);
+    padding: 5px 10px 0px 10px;
+}
+main div {
+    max-width: 600px 400px;
+    background-color:var(--default-dark);
+    color:var(--default-light);
+    padding: 1em;
+    padding-bottom: 100px;
+    border: 1px solid #444;
+}
+#spotlights {
+    padding-bottom: 1em;
+}
+#spotlights span:nth-child(3) {
+    display:none;
+}
+#spotlights p {
+    border: 1px solid #444;
+    margin: 0;
+    padding: 1em;
+    padding-bottom: 200px;
+}
+footer {
+    background-color:var(--main-color);
+    font-family: var(--header-font);
+    text-align:center;
+    color:var(--default-light);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-shadow: 0 2px 15px --default-dark;
+}
+footer div:nth-child(1) { font-size: 1.2rem;}
+footer div:nth-child(2) { font-size: 0.5rem;}
+#logofooter img {
+    width: 80px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 1%;
+    padding-bottom: 0%;
+}
+#footer1 p {
+    margin: 3%;
+    padding: 1%;
+}
+#footer1 a {
+    color:white;
+    text-decoration:none;
+}
+#footer1 a::before {
+    content: "📍";
+}
+#footer2 ul li {
+    list-style: none;
+}
+#jacobName, #chamberNameFooter {
+    font-family:var(--header-font);
+    letter-spacing: 0.15rem;
+}
+#to-portal-page {
+    text-decoration: none;
+    color:var(--default-light);
+}
+#to-portal-page:hover {
+    box-shadow: 0 2px 15px gray;
+    padding: 5px 10px 0px 10px;
+}
+hr {
+    opacity: 30%;
+}
