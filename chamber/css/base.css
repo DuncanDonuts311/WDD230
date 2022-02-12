@@ -3,7 +3,7 @@
 
 :root {
     --main-color: #2A4D14;
-    --secondary-color: #1F487E;
+    --secondary-color: #011638;
     --accent-color: #99C24D;
     --default-light: #FAFAFF;
     --default-dark: #637081;
@@ -11,15 +11,29 @@
     --header-font: 'Baloo 2', cursive;
     --paragraph-font: 'Open Sans', sans-serif;
 }
-body{
-    max-width: 100%;
+.banner {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1% 1%;
 }
-html { background-color: var(--secondary-color); }
+#banner {
+    display:none;
+}
+.icon-up {
+    display:none;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    box-shadow: 0 2px 15px var(--default-dark);
+    padding: 5px 5px;
+    cursor:pointer;
+    opacity: 90%;
+}
 header {
     background-color: var(--main-color);
     display:grid;
     grid-gap:1%;
-    grid-template-columns: 1fr, 3fr, 1fr, 1fr;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
     box-shadow: var(--default-dark);
 }
 .logo {
@@ -40,12 +54,15 @@ header {
     font-family: var(--header-font);
     font-size: 1.6rem;
     margin-bottom: 1%;
+    color: var(--default-light);
     text-shadow: var(--default-dark);
 }
 .headings h2 {
     font-family: var(--paragraph-font);
     margin-top: 0%;
     color: var(--default-light);
+    font-weight: 700;
+    font-size: 1rem;
 }
 .social {
     grid-column: 3/4;
@@ -63,19 +80,20 @@ header {
     font-size: 2em;
     letter-spacing: 0.2rem;
     padding: 2%;
-    color:var(--accent-color);
+    color:var(--default-light);
     text-align: center;
     margin:2%;
 }
 nav button {
     position:absolute;
-    right:1%;
-    top:2%;
+    right:2%;
+    top:40px;
     margin: 0.2rem 2vw;
     background:var(--secondary-color);
     border: none;
     font-size: 2rem;
     color:var(--accent-color);
+    cursor: pointer;
 }
 nav {
     grid-column:1/5;
@@ -124,48 +142,73 @@ nav ul li a {
 }
 .active a, nav ul li a:hover {
     color:var(--default-light);
-    opacity: 80%;
+    font-size: 1.4rem;
+}
+nav ul li:hover {
+    background-color: var(--default-dark);
 }
 main {
     width:80%;
     margin: 0 auto;
     box-shadow:var(--default-dark);
-    padding: 5px 10px 0px 10px;
 }
 main div {
-    max-width: 600px 400px;
+    text-align: center;
     background-color:var(--default-dark);
     color:var(--default-light);
     padding: 1em;
-    padding-bottom: 100px;
     border: 1px solid #444;
 }
-#spotlights {
-    padding-bottom: 1em;
+h2 {
+    color: var(--accent-color);
+    font-family: var(--header-font);
+    text-shadow: 2px 0px 10px var(--default-dark);
 }
-#spotlights span:nth-child(3) {
+.heroImages {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#weather #weatherInfo {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:auto;
+    align-items: center;
+    border: none;
+}
+#weather #weatherInfo #weatherIcon {
+    grid-area: 1/2/3/2;
+}
+#weather #weatherInfo #weatherF {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#spotlights section span:nth-child(3) {
     display:none;
 }
-#spotlights p {
-    border: 1px solid #444;
+#spotlights section {
+    border: 1px solid var(--accent-color);
+    background-color: var(--default-dark);
     margin: 0;
-    padding: 1em;
-    padding-bottom: 200px;
+    padding: 0 1em;
+    text-align: center;
+}
+#join {
+    display:none;
 }
 footer {
     background-color:var(--main-color);
     font-family: var(--header-font);
     text-align:center;
     color:var(--default-light);
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding: 1% 0;
     box-shadow: 0 2px 15px --default-dark;
 }
 footer div:nth-child(1) { font-size: 1.2rem;}
 footer div:nth-child(2) { font-size: 0.5rem;}
 #logofooter img {
     width: 80px;
-    background-color: white;
+    background-color: var(--default-light);
     border-radius: 50%;
     margin-top: 1%;
     padding-bottom: 0%;
@@ -175,7 +218,7 @@ footer div:nth-child(2) { font-size: 0.5rem;}
     padding: 1%;
 }
 #footer1 a {
-    color:white;
+    color:var(--default-light);
     text-decoration:none;
 }
 #footer1 a::before {
@@ -193,9 +236,53 @@ footer div:nth-child(2) { font-size: 0.5rem;}
     color:var(--default-light);
 }
 #to-portal-page:hover {
-    box-shadow: 0 2px 15px gray;
+    box-shadow: 0 2px 15px var(--default-dark);
     padding: 5px 10px 0px 10px;
 }
 hr {
-    opacity: 30%;
+    color: var(--default-dark);
+    opacity: 5;
+    clear:left;
+}
+#hero {
+    position: relative;
+    padding: 0 0;
+    background-color: transparent;
+}
+#event {
+    background-color: var(--default-dark);
+}
+#event h2, #spotlights section h2 {
+    color:var(--default-light)
+}
+#event, #spotlights section {
+    color:var(--default-light)
+}
+#hero .heroImages {
+    max-width: 100%;
+}
+#hero h2 {
+    color:var(--secondary-color);
+    position:absolute;
+    text-shadow: var(--default-dark);
+    margin-left: 2%;
+    margin-top: 1%;
+    font-size: 2em;
+}
+#joinBtn {
+    position: absolute;
+    font-size: 1em;
+    background-color:var(--accent-color);
+    color:var(--default-light);
+    font-family: var(--header-font);
+    font-weight: bold;
+    cursor: pointer;
+    bottom: 2%;
+    right: 2%;
+    padding: 1%;
+    box-shadow: 0 2px 15px var(--default-dark);
+}
+#joinBtn:hover {
+    font-size: 1.1em;
+    background-color:var(--default-light);
 }

@@ -3,22 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Jacob Duncan">
+        <meta name="description" content="Dewitt, Virginia Chamber of Commerce">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dewitt, VA Chamber of Commerce</title>
-        <link rel="shortcut icon" href="images/favicon.ico">
-        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/medium.css" media="(max-width: 950px)">
         <link rel="stylesheet" href="css/large.css" media="(max-width: 640px)">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <script src="js/jquery-latest.js" defer></script>
+        <script src="js/script.js" defer></script>
     </head>
     <body>
+        <div class="banner" id="banner">
+            <q>Come join us for the chamber meet and greet Wednesday at 07:00 p.m.</q>
+        </div>
+        <img src="images/icon-arrow-up.png" class="icon-up" alt="Go up"/>
         <header>
         <div class="logo">
-            <img src="images/icon.png" alt="DeWitt, VA Chambers of Commerce Icon">
+            <img src="images/icon.webp" alt="DeWitt, VA Chambers of Commerce Icon">
         </div>
         <div class="headings">
             <h1>DeWitt, Virginia Chamber of Commerce</h1>
-            <br>
             <h2>Miles of trees can't keep us apart</h2>
         </div>
         <div class="social">
@@ -39,19 +45,72 @@
         </header>
         <main>
             <div id="hero">
-                <p>Call to action</p>
+            <h2>Welcome to Dewitt</h2>
+            <picture class="heroImg">
+                <source srcset="images/wdd230-medium.png" media="(min-width: 40em) and (max-width: 54.9em)"
+                class="heroImages">
+                <source srcset="images/wdd230-large.png" media="(min-width: 55em)" class="heroImages">
+                <img src="images/wdd230-small.png" alt="Dewitt chamber hero image" class="heroImages">
+            </picture>
+            <button id="joinBtn">Join our chamber today</button>
             </div>
             <div id="event">
-                <p>Event</p>
+                <h2>Farm Tours</h2>
+                <h3>Rolling Hills Dairy Farm</h3>
+                <p>Come check out the farm and see where your milk really comes from</p>
             </div>
             <div id="weather">
-                <p>Weather</p>
+                <h2>Weather</h2>
+                <div id="weatherInfo">
+                    <img src="images/weatherIcon.webp" alt="Weather Icon" id="weatherIcon">
+                    <p><span id="weatherF">33</span>&#8457</p>
+                </div>
+                <hr>
+                <p>Wind Speed: <span id="windSpeed">2.5 mph</span></p>
+                <p>Wind Chill <span id="windC"></span></p>
+            </div>
+            <div id="news">
+                <h2>Recent News</h2>
+                <p>Natoque integer nisi sollicitudin neque penatibus. Fusce a eget consequat aptent facilisi rhoncus enim eros. Ullamcorper pretium aliquet diam habitant mollis nec elementum orci? Integer condimentum dictum scelerisque conubia, facilisi ullamcorper potenti dictumst aenean litora? Mattis tortor, luctus cursus. Condimentum, molestie fermentum malesuada habitasse libero felis. Elementum consectetur viverra maecenas accumsan vulputate conubia consequat nisl. Rhoncus, imperdiet eget urna auctor. Blandit lacinia laoreet sodales parturient.
+
+                    Molestie faucibus lacus ligula odio elit cursus viverra magnis pharetra! Mollis sapien turpis ligula mollis inceptos commodo consequat. Tempor ac vulputate sem cum nam penatibus hac vitae porttitor. Feugiat porttitor scelerisque ipsum eros sed elementum. Quam curae; magna litora parturient aenean dui morbi per nam in nullam odio. Habitasse egestas eu erat. Nisl dolor litora vel pretium conubia! Varius egestas lacinia nec aliquam consequat rutrum auctor. Nostra penatibus semper ipsum sollicitudin praesent. Dictumst congue mi suspendisse et senectus sit nec.</p>
+            </div>
+            <div id="spotlights">
+                <section>
+                    <h2>The Moving Guys</h2>
+                    <img src="images/movingTruck.webp" alt="Moving Truck">
+                    <br>
+                    <q>Fast, safe, and affordable</q>
+                    <hr>
+                    <p>themovingguys@gmail.com</p>
+                    <p>(804) 123-4568</p>
+                </section>
+                <section>
+                    <h2>Rural Solar</h2>
+                    <img src="images/solarPanels.webp" alt="Solar panels">
+                    <br>
+                    <em>Ask about available grants</em>
+                    <hr>
+                    <p>ruralsolar@gmail.com</p>
+                    <p>(804) 123-1122</p>
+                </section>
+                <section>
+                    <h2>Smith's Farm Fresh Produce</h2>
+                    <img src="images/freshProduce.webp" alt="Fresh produce">
+                    <br>
+                    <em>Grown just around the corner</em>
+                    <hr>
+                    <p>smithsfarm@gmail.com</p>
+                    <p>(804) 123-2233</p>
+                </section>
             </div>
             <div id="join">
-                <p>Join</p>
+                <h2>Join Us!</h2>
+                <p id="joinp">Join our chamber today to help support our local community</p>
             </div>
         </main>
         <footer onload="date()">
+            <div id="footer1">
             <div id="logofooter"><img src="images/icon.png" alt="Dewitt, VA Chamber of Commerce Icon"></div>
            <p><span id="chamberNameFooter">Dewitt, VA Chamber of Commerce</span><br>
         12345 Boydton Plank Road <br> Dewitt, VA 23840</p>
@@ -67,8 +126,6 @@
             </ul>
         </div>
         </footer>
-        <script src="js/currentDate.js"></script>
-        <script src="js/lastUpdated.js"></script>
-        <script src="js/hamburgerNav.js"></script>
+        <script src="js/windChill.js"></script>
     </body>
 </html>
