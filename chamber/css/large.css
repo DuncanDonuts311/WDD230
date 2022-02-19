@@ -1,4 +1,4 @@
-@media (min-width: 55em) {
+@media (min-width: 950px) {
     main {
         width: 95%;
         overflow:hidden;
@@ -41,6 +41,9 @@
         grid-gap:1%;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         font-size: 1rem;
+    }
+    #hamburgerBtn {
+        display:none;
     }
     #hero {
         grid-area: 1/2/3/4;
