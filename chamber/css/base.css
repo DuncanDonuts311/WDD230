@@ -53,13 +53,14 @@ header {
     font-size: 1rem;
 }
 .social {
-    grid-column: 3/4;
+    grid-column: 4/4;
     align-self: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .social img {
     max-width: 32px;;
+    aspect-ratio: 1/1;
 }
 #headerDate {
     grid-column: 1/5;
