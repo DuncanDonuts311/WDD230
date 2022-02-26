@@ -75,6 +75,11 @@
         border:none;
         padding-top: 1%;
     }
+    /* -----DISCOVERY PAGE----- */
+    .deck {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     .images:hover {
         box-shadow: 0 0 100px var(--default-light);
     }

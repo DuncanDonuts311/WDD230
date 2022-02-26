@@ -278,9 +278,10 @@ hr {
 ******************/
 .discover-main {
     display: grid;
-    grid-template-rows: minmax(min-content, max-content);
-    grid-template-columns: minmax(min-content, max-content);
-    max-width: 500px;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin-bottom:1em;
+    overflow:hidden;
 }
 
 .discover-main h2 {
@@ -316,6 +317,8 @@ hr {
 .discover img {
     filter: blur(0em);
     transition: filter 0.1s;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
 .discover-main > p {

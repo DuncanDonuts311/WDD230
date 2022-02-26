@@ -78,11 +78,16 @@
     #footer2 ul li {
         flex:1 1 auto;
     }
+    /*-----DISCOVER PAGE-----*/
     .discover-main {
 		display: grid;
 		grid-template-rows: minmax(min-content, max-content);
 		grid-template-columns: minmax(min-content, max-content);
 	}
+    .deck {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     .images:hover {
         box-shadow: 0 0 100px var(--default-light);
     }
