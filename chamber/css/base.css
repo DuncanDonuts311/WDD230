@@ -94,7 +94,7 @@ nav ul {
     display:none;
     padding: 0;
     margin: 0;
-    overflow:scroll;
+    overflow: visible;
 }
 nav ul.open {
     display: block;
