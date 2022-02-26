@@ -1,5 +1,4 @@
-let date = new Date;
-let year = date.getFullYear();
-document.getElementById("year").innerHTML = year;
-let lastmod = document.lastModified;
-document.getElementById("dateOutput").innerHTML = lastmod;
+const date = new Date();
+const year = date.getFullYear();
+document.querySelector('#year').innerHTML = `${year}`;
+document.querySelector('#modified').innerHTML = `Last Updated: ${document.lastModified}`;

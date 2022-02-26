@@ -19,22 +19,11 @@
 #banner {
     display:none;
 }
-.icon-up {
-    display:none;
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    box-shadow: 0 2px 15px var(--default-dark);
-    padding: 5px 5px;
-    cursor:pointer;
-    opacity: 90%;
-}
 header {
     background-color: var(--main-color);
     display:grid;
     grid-gap:1%;
     grid-template-columns: 1fr 3fr 1fr 1fr;
-    box-shadow: var(--default-dark);
 }
 .logo {
     display:flex;
@@ -55,7 +44,6 @@ header {
     font-size: 1.6rem;
     margin-bottom: 1%;
     color: var(--default-light);
-    text-shadow: var(--default-dark);
 }
 .headings h2 {
     font-family: var(--paragraph-font);
@@ -101,13 +89,12 @@ nav {
     font-size: 1.2rem;
     width:100%;
     margin: 0 auto;
-    box-shadow:var(--default-dark);
 }
 nav ul {
     display:none;
     padding: 0;
     margin: 0;
-    overflow:hidden;
+    overflow:scroll;
 }
 nav ul.open {
     display: block;
@@ -137,20 +124,20 @@ nav ul li a {
     padding: 0.8rem 2vw;
 }
 .active {
-    background-color:var(--accent-color);
+    background-color:var(--secondary-color);
     opacity:90%;
 }
 .active a, nav ul li a:hover {
-    color:var(--default-light);
+    color:var(--accent-color);
     font-size: 1.4rem;
 }
 nav ul li:hover {
-    background-color: var(--default-dark);
+    color:var(--accent-color);
+    background-color: var(--secondary-color);
 }
 main {
     width:80%;
     margin: 0 auto;
-    box-shadow:var(--default-dark);
 }
 main div {
     text-align: center;
@@ -202,7 +189,7 @@ footer {
     text-align:center;
     color:var(--default-light);
     padding: 1% 0;
-    box-shadow: 0 2px 15px --default-dark;
+    box-shadow: 0 2px 15px var(--default-dark);
 }
 footer div:nth-child(1) { font-size: 1.2rem;}
 footer div:nth-child(2) { font-size: 0.5rem;}
@@ -285,4 +272,53 @@ hr {
 #joinBtn:hover {
     font-size: 1.1em;
     background-color:var(--default-light);
+}
+/******************
+   Discover Page
+******************/
+.discover-main {
+    display: grid;
+    grid-template-rows: minmax(min-content, max-content);
+    grid-template-columns: minmax(min-content, max-content);
+    max-width: 500px;
+}
+
+.discover-main h2 {
+    color: var(--main-color);
+    font-size:xx-large;
+    padding-left: 1em;
+    margin-bottom: auto;
+}
+
+.deck {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: grid;
+    justify-items: center;
+    padding: 1em;
+    margin: 1em auto;
+    background-color: var(--secondary-color);
+}
+
+.card p {
+    margin-top: auto;
+    padding: 0 1em;
+}
+
+.discover img[data-src] {
+    filter: blur(0.2em);
+  }
+.discover img {
+    filter: blur(0em);
+    transition: filter 0.1s;
+  }
+
+.discover-main > p {
+    font-style: italic;
+    color: white;
 }

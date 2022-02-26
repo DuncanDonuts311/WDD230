@@ -4,7 +4,7 @@ body {
     justify-items:center;
 }
 article img[data-src] {
-    filter: blur(0.2em);
+    filter: blur(0.4em);
   }
   
   article img {

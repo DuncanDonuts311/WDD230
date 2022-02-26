@@ -1,7 +1,7 @@
 @media (min-width: 950px) {
     main {
         width: 95%;
-        overflow:hidden;
+        overflow: hidden;
     }
     header {
         grid-template-columns: 1fr 2fr 3fr 1fr;
@@ -22,7 +22,7 @@
         border: none;
     }
     .active a, nav ul li a:hover {
-        color:var(--default-dark);
+        color:var(--accent-color);
         font-size: 1.2rem;
     }
     header img {
@@ -78,4 +78,9 @@
     #footer2 ul li {
         flex:1 1 auto;
     }
+    .discover-main {
+		display: grid;
+		grid-template-rows: minmax(min-content, max-content);
+		grid-template-columns: minmax(min-content, max-content);
+	}
 }
