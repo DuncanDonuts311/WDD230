@@ -83,4 +83,12 @@
     .images:hover {
         box-shadow: 0 0 100px var(--default-light);
     }
+    /* -----JOIN PAGE----- */
+    .join-main {
+        justify-items: center;
+    }
+
+    .thankyou-main {
+        grid-row-gap: 0;
+    }
 }

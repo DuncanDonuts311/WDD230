@@ -91,4 +91,34 @@
     .images:hover {
         box-shadow: 0 0 100px var(--default-light);
     }
+/*-----JOIN PAGE-----*/
+
+    .description {
+        display: block;
+		font-size: smaller;
+    }
+
+	.join-main h2 {
+        grid-area:1/1/2/3;
+        justify-content: center;
+        margin-top: 1rem;
+        border-radius: 5px;
+    }
+	.thankyou-main {
+		grid: 1fr / 1fr 1fr;
+
+	}
+
+	.thankyou-main h2 {
+		align-self: end;
+	}
+
+	.thankyou-main p {
+		grid-column: 2/3;
+	}
+
+	.thankyou-main img {
+		grid-row: 1/3;
+		max-height: 450px;
+	}
 }

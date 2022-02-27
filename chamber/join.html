@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Jacob Duncan">
+        <meta name="description" content="Dewitt, Virginia Chamber of Commerce">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dewitt, VA Chamber of Commerce</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+    <body>
+        <div class="banner" id="banner">
+            <q>Come join us for the chamber meet and greet Wednesday at 07:00 p.m.</q>
+        </div>
+        <header>
+        <div class="logo">
+            <img src="images/icon.webp" alt="DeWitt, VA Chambers of Commerce Icon">
+        </div>
+        <div class="headings">
+            <h1>DeWitt, Virginia Chamber of Commerce</h1>
+            <h2>Miles of trees can't keep us apart</h2>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebookIcon.png" alt="Facebook logo"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedinIcon.png" alt="Linkedin logo"></a>
+        </div>
+        <span id="headerDate"></span>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main class="join-main">
+            <h2>Join the Dewitt Chamber of Commerce today</h2>
+            <form method="get" action="thankyou.html">
+              <fieldset>
+                <legend>Primary Contact</legend>
+                <label class="top"
+                  >First Name*<input
+                   type="text"
+                   name="fname"
+                   placeholder="John"
+                   required
+                /></label>
+                <label class="top"
+                  >Last Name*<input
+                  type="text"
+                  name="lname"
+                  placeholder="Doe"
+                  required
+                /></label>
+                <label class="top"
+                  >Email*<input
+                    type="email"
+                    name="email"
+                    placeholder="someone@gmail.com"
+                    required
+                /></label>
+                <label class="top"
+                  >Phone*<input
+                  type="tel"
+                  name="phone"
+                  placeholder="555-867-5309"
+                  required
+                /></label>
+              </fieldset>
+              <fieldset>
+                <legend>Member Informaion</legend>
+                <label class="top"
+                  >Business Position<input
+                    type="text"
+                    name="bus-position"
+                    pattern="[A-Za-z\s-]{7,}"
+                    title="Business Position"
+                /></label>
+                <label class="top"
+                  >Business Name*<input
+                    type="text"
+                    name="bus-name"
+                    title="Business Name"
+                    required
+                /></label>
+                <label class="top"
+                  >Business Description <br /><textarea
+                    rows="3"
+                    name="bus-description"
+                  ></textarea>
+                </label>
+              </fieldset>
+              <fieldset>
+                <legend>Membership Package</legend>
+                <label class="sbs"
+                  ><input type="radio" name="member" value="np" /><span class="level">
+                    Non-profit </span
+                  ><span class="cost"> Free </span></label
+                >
+                <p class="description">
+                  Your business will be listed in our online directory
+                </p>
+                <label class="sbs"
+                  ><input type="radio" name="member" value="bronze" /><span
+                    class="level"
+                    >Bronze </span
+                  ><span class="cost"> $500 </span></label
+                >
+                <p class="description">
+                  You business will be featured in our weekly spotlights and you will be eligible for discounted tickets to our monthly networking events.
+                </p>
+                <label class="sbs"
+                  ><input type="radio" name="member" value="silver" /><span
+                    class="level"
+                    >Silver </span
+                  ><span class="cost"> $1,500 </span></label
+                >
+                <p class="description">
+                  Your business will be featured in our spotlights and gain free admission to our monthly networking meetings along with admittance to the Chamber Chairmen meetings.
+                </p>
+                <label class="sbs"
+                  ><input type="radio" name="member" value="gold" /><span
+                    class="level"
+                    >Gold </span
+                  ><span class="cost"> $3,500 </span></label
+                >
+                <p class="description">
+                  You and your business can have it all! Along with everything in the silver membership package, you will receive a reserved parking spot in the Chamber's parking lot and the ability to bring up to two guests to every Chamber event for free.
+                </p>
+              </fieldset>
+              <label
+                ><input type="hidden" id="submitdate" name="submitdate" value=""
+              /></label>
+              <input type="submit" class="submitBtn" value="Join the Chamber" />
+            </form>
+          </main>
+
+        <footer onload="date()">
+            <div id="footer1">
+            <div id="logofooter"><img src="images/icon.png" alt="Dewitt, VA Chamber of Commerce Icon"></div>
+           <p><span id="chamberNameFooter">Dewitt, VA Chamber of Commerce</span><br>
+        12345 Boydton Plank Road <br> Dewitt, VA 23840</p>
+        <p>chamber@dewittvachamber.com<br>(804)1234-567<br><a href="#">Location Map</a></p>
+           </div>
+           <hr>
+        <div id="footer2">
+            <ul>
+                <li>&copy; <span id="current-year">Year</span> Dewitt, VA Chamber</li>
+                <li><span id="jacobName">Jacob Duncan</span></li>
+                <li>WDD 230 Projects</li>
+                <li><a href="../index.html" id="to-portal-page">&#x1f3e0; Portal Page</a> | Last Update: <span id="date"></span></li>
+            </ul>
+        </div>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/windChill.js"></script>
+    </body>
+</html>
