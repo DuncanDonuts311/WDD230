@@ -48,9 +48,9 @@ function displayBusinesses(business) {
 }
 
 listButton.addEventListener("click", ()=> {
-    cards.classList.replace("card-view", "list-view")
+    cards.classList.replace("card-view", "list-view");
 });
 
 cardButton.addEventListener("click", ()=> {
-    cards.classList.replace("list-view", "card-view")
+    cards.classList.replace("list-view", "card-view");
 });
