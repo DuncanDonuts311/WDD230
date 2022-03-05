@@ -1,0 +1,88 @@
+{
+    "businesses": [
+      {
+        "name" : "John B. Chappell, Attorney at Law",
+        "address": "13915 Boydton Plank Rd Ste C, \nDinwiddie, VA 23841",
+        "phone": "(804) 469-7050",
+        "website": "https://jbchappelllaw.com/",
+        "imgfile": "chamber/images/directory/lawyerChappell.webp"
+      },
+      {
+        "name": "Premier Small Business Solutions - Accounting and Tax Advice",
+        "address": "601 Dinwiddie St, \nPortsmouth, VA 23704",
+        "phone": "(757) 724-3031",
+        "website": "https://premiersmallbusiness.com/",
+        "imgfile": "chamber/images/directory/premierBusinessSolutions.webp"
+      },
+      {
+        "name": "Strategic Business Solutions",
+        "address": "Dewitt, Virginia",
+        "phone": "(804) 791-9104",
+        "website": "https://www.sbsolutionsva.com/",
+        "imgfile":"chamber/images/directory/strategicBusinessSolutions.webp"
+      },
+      {
+        "name": "Pressure Washing 4 You",
+        "address": "12308 Eastview Dr, \nDinwiddie, VA 23841",
+        "phone": "(804) 895-3463",
+        "website": "https://www.facebook.com/PRESSUREWASHING4YOU/",
+        "imgfile": "chamber/images/directory/pressureWashing4You.webp"
+      },
+      {
+        "name": "Dinwiddie Deep Well Drilling Inc",
+        "address": "14920 Old Stage Rd, \nDinwiddie, VA 23841",
+        "phone": "(804) 469-7058",
+        "website": "https://www.dinwiddiedeepwelldrilling.net/",
+        "imgfile": "chamber/images/directory/dinwiddieDeepWellDrilling.webp"
+      },
+      {
+        "name": "Route 1 Country Store",
+        "address": "13723 Boydton Plank Rd, \nDinwiddie, VA 23841",
+        "phone": "(804) 469-5950",
+        "website": "https://www.route1countrystore.com/",
+        "imgfile": "chamber/images/directory/route1CountryStore.webp"
+      },
+      {
+        "name": "Underwood's Tree Service",
+        "address": "Dinwiddie, Virginia",
+        "phone": "(804) 691-3075",
+        "website": "https://underwoodstreeservice.com/",
+        "imgfile": "https://github.com/DuncanDonuts311/wdd230/blob/master/chamber/images/directory/underwoodsTreeService.webp"
+      },
+      {
+        "name": "Kin's Wok Chinese Restaurant",
+        "address": "14517 Boydton Plank Rd, \nDinwiddie, VA 23841",
+        "phone": "(804) 469-4188",
+        "website": "http://kins-wok-chinese.edan.io/",
+        "imgfile": "chamber/images/directory/underwoodsTreeService.webp"
+      },
+      {
+        "name": "Jake's Under Pressure Power Washing LLC",
+        "address": "4305 Wrenn Forrest Dr, \nPetersburg, VA 23803",
+        "phone": "(804) 898-1931",
+        "website": "https://jakes-under-pressure-power-washing-llc.business.site/#posts",
+        "imgfile": "chamber/images/directory/jakesUnderPressurePowerWashing.webp"
+      },
+      {
+        "name": "Rain for Rent",
+        "address": "23025 Airpark Dr, \nPetersburg, VA 23803",
+        "phone": "(804) 732-6914",
+        "website": "https://www.rainforrent.com/",
+        "imgfile": "chamber/images/directory/rainForRent.webp"
+      },
+      {
+        "name": "Watkins Outdoor Products Inc",
+        "address": "22504 Cox Rd, \nPetersburg, VA 23803",
+        "phone": "(804) 524-9655",
+        "website": "https://www.watkinsoutdoor.com/",
+        "imgfile":"chamber/images/directory/watkinsOutdoorProducts.webp"
+      },
+      {
+        "name": "Willows Bend Farm Herbs & Aromatherapy",
+        "address": "20413 Carson Rd, \nDinwiddie, VA 23841",
+        "phone": "(804) 892-7588",
+        "website": "https://www.willowsbendfarm.com/",
+        "imgfile": "chamber/images/directory/willowsBendFarm.webp"
+      }
+    ]
+  }

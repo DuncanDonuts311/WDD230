@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Jacob Duncan">
+        <meta name="description" content="Dewitt, Virginia Chamber of Commerce">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dewitt, VA Chamber of Commerce</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
+    <body>
+        <div class="banner" id="banner">
+            <q>Come join us for the chamber meet and greet Wednesday at 07:00 p.m.</q>
+        </div>
+        <header>
+        <div class="logo">
+            <img class="images" src="images/icon.webp" alt="DeWitt, VA Chambers of Commerce Icon">
+        </div>
+        <div class="headings">
+            <h1>DeWitt, Virginia Chamber of Commerce</h1>
+            <h2>Miles of trees can't keep us apart</h2>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank"><img class="images" src="images/facebookIcon.png" alt="Facebook logo"></a>
+            <a href="https://linkedin.com" target="_blank"><img class="images" src="images/linkedinIcon.png" alt="Linkedin logo"></a>
+        </div>
+        <span id="headerDate"></span>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li class="active"><a href="#">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main id="directoryMain">
+            <h2>Business Directory</h2>
+            <div class="businessBtns"><button id="cardsBtn">&#10998;&#10998;&#10998;</button><button id="listsBtn">&#9783;</button></div>
+            <div class="cards" id="cardToggle"></div>
+            <div class="lists" id="listToggle"></div>
+        </main>
+        <footer onload="date()">
+            <div id="footer1">
+            <div id="logofooter"><img class="images" src="images/icon.png" alt="Dewitt, VA Chamber of Commerce Icon"></div>
+           <p><span id="chamberNameFooter">Dewitt, VA Chamber of Commerce</span><br>
+        12345 Boydton Plank Road <br> Dewitt, VA 23840</p>
+        <p>chamber@dewittvachamber.com<br>(804)1234-567<br><a href="#">Location Map</a></p>
+           </div>
+           <hr>
+        <div id="footer2">
+            <ul>
+                <li>&copy; <span id="current-year">Year</span> Dewitt, VA Chamber</li>
+                <li><span id="jacobName">Jacob Duncan</span></li>
+                <li>WDD 230 Projects</li>
+                <li><a href="../index.html" id="to-portal-page">&#x1f3e0; Portal Page</a> | Last Update: <span id="date"></span></li>
+            </ul>
+        </div>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/directory.js"></script>
+    </body>
+</html>

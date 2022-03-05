@@ -91,4 +91,11 @@
     .thankyou-main {
         grid-row-gap: 0;
     }
+    .list-view section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card-view {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
